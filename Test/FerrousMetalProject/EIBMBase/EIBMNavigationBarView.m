@@ -20,7 +20,7 @@
         self.backgroundColor = NavgationBarBackgroundColor;
         [self createTitleLabel];
         [self setNavigationBar];
-        NSInteger i = 1;
+        NSInteger i = 3;
 //        self.lineImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 63.5, SCREEN_WIDTH, 0.5)];
 //        self.lineImageView.backgroundColor = LINECOLOR;
 //        [self addSubview:self.lineImageView];
