@@ -1,0 +1,6 @@
+framework module TXFramework_OC {
+  umbrella header "TXFramework_OC.h"
+
+  export *
+  module * { export * }
+}

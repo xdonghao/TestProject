@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>NoSuchKey</Code>
+  <Message>The specified key does not exist.</Message>
+  <RequestId>5D07586E94D2DC78C539CD71</RequestId>
+  <HostId>jin10cdn.oss-cn-hangzhou.aliyuncs.com</HostId>
+  <Key>assets/img/commons/flag/flash/葡萄牙.png</Key>
+</Error>

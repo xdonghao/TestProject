@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="KGk-i7-Jjw" customClass="EIBMRateToolTFCell">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ab-Z4-Mk2">
+                        <rect key="frame" x="10" y="5" width="302" height="56"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入相应数据" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dou-RO-Xcd">
+                                <rect key="frame" x="10" y="29" width="282" height="18.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 关税税率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWS-vF-hDR">
+                                <rect key="frame" x="10" y="5" width="48.5" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mz4-wb-iry">
+                                <rect key="frame" x="10" y="50.5" width="282" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="7mc-pl-hkc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dou-RO-Xcd" firstAttribute="leading" secondItem="tWS-vF-hDR" secondAttribute="leading" id="7q4-El-XFf"/>
+                            <constraint firstItem="Mz4-wb-iry" firstAttribute="leading" secondItem="2ab-Z4-Mk2" secondAttribute="leading" constant="10" id="PJl-Vg-b6Q"/>
+                            <constraint firstItem="dou-RO-Xcd" firstAttribute="centerY" secondItem="2ab-Z4-Mk2" secondAttribute="centerY" constant="10" id="WPA-55-Io9"/>
+                            <constraint firstAttribute="trailing" secondItem="Mz4-wb-iry" secondAttribute="trailing" constant="10" id="dPG-hk-OG5"/>
+                            <constraint firstItem="Mz4-wb-iry" firstAttribute="top" secondItem="dou-RO-Xcd" secondAttribute="bottom" constant="3" id="hk8-bA-UUe"/>
+                            <constraint firstItem="dou-RO-Xcd" firstAttribute="leading" secondItem="2ab-Z4-Mk2" secondAttribute="leading" constant="10" id="k4a-Dp-SbP"/>
+                            <constraint firstAttribute="trailing" secondItem="dou-RO-Xcd" secondAttribute="trailing" constant="10" id="qdr-jJ-Ali"/>
+                            <constraint firstItem="tWS-vF-hDR" firstAttribute="top" secondItem="2ab-Z4-Mk2" secondAttribute="top" constant="5" id="xOZ-4g-cO7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="2ab-Z4-Mk2" secondAttribute="bottom" constant="5" id="M7X-3t-0hu"/>
+                    <constraint firstAttribute="trailing" secondItem="2ab-Z4-Mk2" secondAttribute="trailing" constant="10" id="Y4c-rM-eAH"/>
+                    <constraint firstItem="2ab-Z4-Mk2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ayE-9T-Xec"/>
+                    <constraint firstItem="2ab-Z4-Mk2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="gMO-aF-8Ch"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="TextField" destination="dou-RO-Xcd" id="z8g-cg-Zx0"/>
+                <outlet property="bgView" destination="2ab-Z4-Mk2" id="fzt-Rn-una"/>
+                <outlet property="lineView" destination="Mz4-wb-iry" id="td2-a6-jGu"/>
+                <outlet property="titleLabel" destination="tWS-vF-hDR" id="Nuy-fE-Exm"/>
+            </connections>
+            <point key="canvasLocation" x="139.13043478260872" y="105.80357142857143"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>NoSuchKey</Code>
+  <Message>The specified key does not exist.</Message>
+  <RequestId>5D0757F4146F3806E11F16D1</RequestId>
+  <HostId>jin10cdn.oss-cn-hangzhou.aliyuncs.com</HostId>
+  <Key>assets/img/commons/flag/flash/日本 .png</Key>
+</Error>

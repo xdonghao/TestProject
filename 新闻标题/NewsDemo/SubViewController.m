@@ -54,6 +54,9 @@
     TicketViewController *ticketVC = [[TicketViewController alloc] init];
     ticketVC.title = @"彩票";
     [array addObject:ticketVC];
+    
+    
+    NSInteger i = 0;
 
     return array;
 }

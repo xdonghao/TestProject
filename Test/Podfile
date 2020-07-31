@@ -1,0 +1,19 @@
+platform:ios,'10.0'
+inhibit_all_warnings!
+
+target 'FerrousMetalProject' do
+    pod 'AMap3DMap'
+    pod 'AMapLocation'
+    pod 'AMapNavi'
+    pod 'AMapSearch'
+    pod 'MBProgressHUD', '~> 0.9'
+    pod 'IQKeyboardManager'
+    pod 'SDCycleScrollView'
+    pod 'JPush'
+    pod 'FMDB'
+    pod 'MJExtension', '~> 3.0.13'
+    pod 'SDWebImage'
+    pod 'Masonry'
+    pod 'AFNetworking'
+    pod 'MJRefresh'
+end
